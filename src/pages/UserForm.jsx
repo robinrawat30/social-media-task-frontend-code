@@ -30,7 +30,7 @@ const UserForm = () => {
 
         try {
 
-            const { data } = await axios.post('https://social-media-task-backend-code.onrender.com/api/v1/user/submit', formData, {
+            const { data } = await axios.post('https://social-media-task-backend-code.vercel.app//api/v1/user/submit', formData, {
                 withCredentials: true,
                 headers: { 'Content-Type': 'multipart/form-data' },
     

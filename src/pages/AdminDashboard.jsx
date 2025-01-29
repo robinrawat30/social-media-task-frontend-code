@@ -13,7 +13,7 @@ const AdminDashboard = () => {
 
         try {
 
-            const { data } = await axios.get("https://social-media-task-backend-code.onrender.com/api/v1/admin/logout", { withCredentials: true });
+            const { data } = await axios.get("https://social-media-task-backend-code.vercel.app//api/v1/admin/logout", { withCredentials: true });
 
 
             alert(data.message);
@@ -36,7 +36,7 @@ const AdminDashboard = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await axios.get('https://social-media-task-backend-code.onrender.com/api/v1/user/all', { withCredentials: true });
+            const response = await axios.get('https://social-media-task-backend-code.vercel.app//api/v1/user/all', { withCredentials: true });
             setUsers(response.data.users);
         };
         fetchData();
