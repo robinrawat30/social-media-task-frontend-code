@@ -16,7 +16,7 @@ const SingleUser = () => {
 
         const getUser = async () => {
 
-            await axios.get(`https://social-media-task-backend-code.vercel.app//api/v1/user/${id}`, {
+            await axios.get(`https://social-media-task-backend-code.vercel.app/api/v1/user/${id}`, {
                 withCredentials: true,
             }).then((res) => {
 

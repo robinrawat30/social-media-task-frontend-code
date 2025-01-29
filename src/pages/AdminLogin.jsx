@@ -17,7 +17,7 @@ const AdminLogin = () => {
 
         try {
 
-            const {data} = await axios.post("https://social-media-task-backend-code.vercel.app//api/v1/admin/login",{adminName,password},{withCredentials:true,headers:{"Content-Type":"application/json"}});
+            const {data} = await axios.post("https://social-media-task-backend-code.vercel.app/api/v1/admin/login",{adminName,password},{withCredentials:true,headers:{"Content-Type":"application/json"}});
 
             alert(data.message);
             navigateTo("/admin/dashboard");
